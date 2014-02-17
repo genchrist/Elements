@@ -7,13 +7,12 @@
 <body>
 
 
- <div data-role="page" id="home" data-theme="d">
-  <div data-role="header" data-position="fixed" data-theme="e">
-   <h1>ALCHEMIST</h1>
-  </div>
+ <div data-role="page" id="home" data-theme="d" data-dom-cache="true">
+  
   <div data-role="content" data-theme="d">
+ 
    <p align="center"><img src="pt.png" align="middle"></p>
-   
+    <h1 align="center">Elements</h1>
    
    <a href="#list" data-role="button" data-transition="slide" data-theme="e" data-inset="true">View list of Elements</a>
   </div>
@@ -23,30 +22,30 @@
  </div>
 
  
- <div data-role="page" data-theme="d" id="list">
+ <div data-role="page" data-theme="d" id="list" data-dom-cache="true">
   <div data-role="header" data-position="fixed" data-theme="e">
    <a href="#" data-role="button" data-rel="back" data-theme="e">Back</a>
-   <h1>ALCHEMIST</h1>
+   <h1>Elements</h1>
    <a href="#home" data-role="button" data-theme="e">Home</a>
   </div>
   <div data-role="content" data-theme="d">
    <h1 align="center">List of Elements</h1>
    <ul data-role="listview" data-filter="true" data-inset="true" data-filter-placeholder="Search for Elements">
         <li data-role="list-divider" data-theme="e">Group 1 Elements</li>
-        <li><a href="hydrogen.html" data-transition="slide">Hydrogen</a></li>
-        <li><a href="lithium.html" data-transition="slide">Lithium</a></li>
-        <li><a href="sodium.html" data-transition="slide">Sodium</a></li>
-        <li><a href="potassium.html" data-transition="slide">Potassium</a></li>
-        <li><a href="rubidium.html" data-transition="slide">Rubidium</a></li>
-        <li><a href="caesium.html" data-transition="slide">Caesium</a></li>
-        <li><a href="francium.html" data-transition="slide">Francium</a></li>
+        <li><a href="hydrogen.html" data-transition="slide" data-prefetch>Hydrogen</a></li>
+        <li><a href="lithium.html" data-transition="slide" data-prefetch>Lithium</a></li>
+        <li><a href="sodium.html" data-transition="slide" data-prefetch>Sodium</a></li>
+        <li><a href="potassium.html" data-transition="slide" data-prefetch>Potassium</a></li>
+        <li><a href="rubidium.html" data-transition="slide" data-prefetch>Rubidium</a></li>
+        <li><a href="caesium.html" data-transition="slide" data-prefetch>Caesium</a></li>
+        <li><a href="francium.html" data-transition="slide" data-prefetch>Francium</a></li>
         <li data-role="list-divider" data-theme="e">Group 2 Elements</li>
-        <li><a href="beryllium.html" data-transition="slide">Beryllium</a></li>
-        <li><a href="magnesium.html" data-transition="slide">Magnesium</a></li>
+        <li><a href="beryllium.html" data-transition="slide" data-prefetch>Beryllium</a></li>
+        <li><a href="magnesium.html" data-transition="slide" data-prefetch>Magnesium</a></li>
    </ul>
   </div>
   <div data-role="footer" data-position="fixed" data-theme="e">
-   <h2>A Product of Tech2Life</h2>
+   <h2><a href="http://tech2life.org" data-prefetch>A Product of Tech2Life</a></h2>
   </div>
  </div>
  
